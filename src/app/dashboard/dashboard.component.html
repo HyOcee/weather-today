@@ -1,0 +1,65 @@
+<div class="weather-container">
+    <nav class="mycontainer-c lt-bg">
+        <div class="pd-head">
+            <div class="logo">
+                <img src="../../assets/images/developer.png" alt="">
+            </div>
+        </div>
+        <div class="mycontainer-c sp-btw ht-100 wdt-100">
+            <ul class="mycontainer-c wdt-100">
+                <li class="wdt-100 myactive"><i class="far fa-user"></i></li>
+                <li class="wdt-100"><i class="far fa-user"></i></li>
+                <li class="wdt-100"><i class="far fa-user"></i></li>
+                <li class="wdt-100"><i class="far fa-user"></i></li>
+                <li class="wdt-100"><i class="far fa-user"></i></li>
+            </ul>
+            <ul class="mycontainer-c">
+                <li class="wdt-100">
+                    <i class="far fa-user"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <header class="mycontainer sp-btw pd-head">
+            <div class="mycontainer">
+                <div class="profile-pic">
+                    <img src="../../assets/images/developer.png" alt="">
+                </div>
+                <div class="profile-name">
+                    <span>Hello,</span>
+                    <span class="v-bold">{{name}}</span>
+                </div>
+            </div>
+
+            <!-- search form -->
+            <div class="mycontainer sp-btw">
+                <form action="" class="relative">
+                    <input type="text" placeholder="search location">
+                    <span class="form-icon">
+                        <i class="far fa-user"></i>
+                    </span>
+                </form>
+                <div>
+                    <i class="far fa-user"></i>
+                </div>
+            </div>
+        </header>
+        <div class="mycontainer sp-btw">
+            <div class="coll-2 kard">Card</div>
+            <div class="coll-2 kard">Card</div>
+        </div>
+        <div class="mycontainer sp-btw">
+            <div class="wdt-65">Kaaa</div>
+            <div class="wdt-30">Kaaa</div>
+        </div>
+    </main>
+    <aside>
+        <table class="table" *ngFor="let student of students">
+            <tr>
+                <td>{{student.name}}</td>
+                <td>{{student.cgpa}}</td>
+            </tr>
+        </table>
+    </aside>
+</div>

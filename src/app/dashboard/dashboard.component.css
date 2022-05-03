@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.weather-container {
+    display: grid;
+    grid-template-columns: 7% 70% 20%;
+    justify-content: space-between;
+}
+
+.mycontainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+.mycontainer-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.sp-btw {
+    justify-content: space-between;
+}
+
+.coll-2 {
+    width: 45%
+}
+
+.coll-3 {
+    width: 30%;
+}
+
+.wdt-65 {
+    width: 65%;
+}
+
+.wdt-30 {
+    width: 30%;
+}
+
+.wdt-100 {
+    width: 100%;
+}
+
+.ht-100 {
+    height: 100%;
+}
+
+/* background colors */
+.lt-bg {
+    background-color: #e0e1ff;
+}
+
+/* all images to fill their containers */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* relative */
+.relative {
+    position: relative;
+}
+
+/* input icons within input  */
+.form-icon {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* top section padding */
+.pd-head {
+    padding: 20px 0 35px;
+}
+
+.weather-container > nav {
+    height: 100vh;
+}
+
+/* logo */
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10%;
+    position: relative;
+}
+
+nav ul li.myactive, nav ul li:hover {
+    color: #7c7fc0;
+}
+
+/* borders */
+nav ul li.myactive::after, nav ul li:hover::after {
+    content: " ";
+    /* display: block; */
+    position: absolute;
+    height: 50%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: #7c7fc0 solid 3px;
+}
+
+nav ul li i {
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+}
+
+.profile-name span {
+    display: block;
+    margin-left: 10%;
+}
+
+main {
+    
+}
